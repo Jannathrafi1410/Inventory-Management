@@ -1,0 +1,178 @@
+{
+  "assumption": "Simulator outputs under stated assumptions, not TBO real P&L. Tranches 40/35/25% at -120/-75/-45d resized by current fractile; WAIT compares buy-now vs after-signal (sigma -10%, rate drift +0.5%/30d); release holds if P(demand arrives)*margin > refund value.",
+  "n_scenarios": 120,
+  "seed": 42,
+  "cells": [
+    {
+      "tranching": {
+        "cell_id": "DXB-NYE",
+        "base_fractile": 0.3246232872590159,
+        "base_target_units": 120.0,
+        "tranches": [
+          {
+            "days_before": 120,
+            "planned_share": 0.4,
+            "current_fractile": 0.3246232872590159,
+            "resized_units": 48.0,
+            "cumulative_units": 48.0,
+            "cash_this_tranche": 647760.0
+          },
+          {
+            "days_before": 75,
+            "planned_share": 0.35,
+            "current_fractile": 0.3246232872590159,
+            "resized_units": 42.0,
+            "cumulative_units": 90.0,
+            "cash_this_tranche": 566790.0
+          },
+          {
+            "days_before": 45,
+            "planned_share": 0.25,
+            "current_fractile": 0.3246232872590159,
+            "resized_units": 30.0,
+            "cumulative_units": 120.0,
+            "cash_this_tranche": 404850.0
+          }
+        ],
+        "total_units": 120.0,
+        "total_cash_inr": 1619400.0
+      },
+      "priced_wait": {
+        "cell_id": "DXB-NYE",
+        "q_now_units": 120.0,
+        "q_after_signal_units": 120.0,
+        "e_profit_now_inr": 694593.4604155543,
+        "e_profit_after_signal_inr": 718974.93171099,
+        "value_wait_inr": 24381.47129543568,
+        "expected_rate_drift_multiplier": 1.005,
+        "recommended_action": "WAIT",
+        "rationale": "E[profit|after next signal]=718974.93 INR vs E[profit|buy now]=694593.46 INR; expected rate drift x1.0050 over 30d; demand sigma reduction 10%."
+      },
+      "release": {
+        "cell_id": "DXB-NYE",
+        "q_on_hand": 48.0,
+        "days_to_expiry": 7,
+        "p_demand_arrives": 0.9666666666666667,
+        "margin_per_unit_inr": 7505.0,
+        "refund_value_per_unit_inr": 0.0,
+        "hold_expected_value_inr_per_unit": 7254.833333333333,
+        "recommended_action": "HOLD",
+        "rule": "hold if P(demand arrives)*margin > refund value"
+      }
+    },
+    {
+      "tranching": {
+        "cell_id": "DXB-DEC",
+        "base_fractile": 0.5454486414391077,
+        "base_target_units": 150.0,
+        "tranches": [
+          {
+            "days_before": 120,
+            "planned_share": 0.4,
+            "current_fractile": 0.5454486414391077,
+            "resized_units": 60.0,
+            "cumulative_units": 60.0,
+            "cash_this_tranche": 575520.0
+          },
+          {
+            "days_before": 75,
+            "planned_share": 0.35,
+            "current_fractile": 0.5454486414391077,
+            "resized_units": 52.5,
+            "cumulative_units": 112.5,
+            "cash_this_tranche": 503580.0
+          },
+          {
+            "days_before": 45,
+            "planned_share": 0.25,
+            "current_fractile": 0.5454486414391077,
+            "resized_units": 37.5,
+            "cumulative_units": 150.0,
+            "cash_this_tranche": 359700.0
+          }
+        ],
+        "total_units": 150.0,
+        "total_cash_inr": 1438800.0
+      },
+      "priced_wait": {
+        "cell_id": "DXB-DEC",
+        "q_now_units": 150.0,
+        "q_after_signal_units": 150.0,
+        "e_profit_now_inr": 598883.3581772161,
+        "e_profit_after_signal_inr": 615075.0791183253,
+        "value_wait_inr": 16191.720941109117,
+        "expected_rate_drift_multiplier": 1.005,
+        "recommended_action": "WAIT",
+        "rationale": "E[profit|after next signal]=615075.08 INR vs E[profit|buy now]=598883.36 INR; expected rate drift x1.0050 over 30d; demand sigma reduction 10%."
+      },
+      "release": {
+        "cell_id": "DXB-DEC",
+        "q_on_hand": 60.0,
+        "days_to_expiry": 7,
+        "p_demand_arrives": 0.9583333333333334,
+        "margin_per_unit_inr": 4908.0,
+        "refund_value_per_unit_inr": 6714.4,
+        "hold_expected_value_inr_per_unit": 4703.5,
+        "recommended_action": "RELEASE",
+        "rule": "hold if P(demand arrives)*margin > refund value"
+      }
+    },
+    {
+      "tranching": {
+        "cell_id": "AIR-BOMDXB",
+        "base_fractile": 0.11000262682830046,
+        "base_target_units": 56.343290460799,
+        "tranches": [
+          {
+            "days_before": 120,
+            "planned_share": 0.4,
+            "current_fractile": 0.11000262682830046,
+            "resized_units": 22.5373161843196,
+            "cumulative_units": 22.5373161843196,
+            "cash_this_tranche": 664850.8274374282
+          },
+          {
+            "days_before": 75,
+            "planned_share": 0.35,
+            "current_fractile": 0.11000262682830046,
+            "resized_units": 19.720151661279647,
+            "cumulative_units": 42.25746784559925,
+            "cash_this_tranche": 581744.4740077496
+          },
+          {
+            "days_before": 45,
+            "planned_share": 0.25,
+            "current_fractile": 0.11000262682830046,
+            "resized_units": 14.08582261519975,
+            "cumulative_units": 56.343290460799,
+            "cash_this_tranche": 415531.7671483926
+          }
+        ],
+        "total_units": 56.343290460799,
+        "total_cash_inr": 1662127.0685935705
+      },
+      "priced_wait": {
+        "cell_id": "AIR-BOMDXB",
+        "q_now_units": 56.343290460799,
+        "q_after_signal_units": 57.38120746611081,
+        "e_profit_now_inr": 160535.78192933457,
+        "e_profit_after_signal_inr": 174778.69541799274,
+        "value_wait_inr": 14242.913488658174,
+        "expected_rate_drift_multiplier": 1.005,
+        "recommended_action": "WAIT",
+        "rationale": "E[profit|after next signal]=174778.70 INR vs E[profit|buy now]=160535.78 INR; expected rate drift x1.0050 over 30d; demand sigma reduction 10%."
+      },
+      "release": {
+        "cell_id": "AIR-BOMDXB",
+        "q_on_hand": 22.5373161843196,
+        "days_to_expiry": 7,
+        "p_demand_arrives": 1.0,
+        "margin_per_unit_inr": 4500.0,
+        "refund_value_per_unit_inr": 8850.0,
+        "hold_expected_value_inr_per_unit": 4500.0,
+        "recommended_action": "RELEASE",
+        "rule": "hold if P(demand arrives)*margin > refund value"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Assumption: docker-compose provides a reproducible dev/demo environment; Python deps are installed in-container
+# on first run (cached in mounted .venv/cache if present). All outputs are simulator outputs under stated assumptions.
+services:
+  python-demo:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: >
+      sh -lc "python -m pip install --upgrade pip &&
+              python -m pip install -e . &&
+              python -m pip install streamlit plotly requests matplotlib fastparquet &&
+              python scripts/demo.py --seed 42 --budget 10000000 --quick-eval"
+    ports:
+      - "0.0.0.0:8501:8501" # reserved for Streamlit UI if started manually
+
+  api:
+    image: golang:1.22-alpine
+    working_dir: /app/api
+    volumes:
+      - ./:/app
+    environment:
+      - PORT=8080
+      - TBO_ROOT=/app
+      - TBO_DATA_DIR=/app/data/api_demo
+      - TBO_STORE_DIR=/app/data/api_plans
+    command: ["sh", "-lc", "go run ."]
+    ports:
+      - "0.0.0.0:8080:8080"
+
+  ui:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TBO_API_URL=http://api:8080
+    command: >
+      sh -lc "python -m pip install --upgrade pip &&
+              python -m pip install -e . &&
+              python -m pip install streamlit plotly requests matplotlib fastparquet &&
+              python -m streamlit run ui/app.py --server.port 8501 --server.address 0.0.0.0"
+    ports:
+      - "0.0.0.0:8501:8501"
+    depends_on:
+      - api

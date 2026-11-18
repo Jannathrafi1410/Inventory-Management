@@ -1,0 +1,19 @@
+PASS  ground_truth table present
+PASS  ground_truth has column latent_demand
+PASS  ground_truth has column capacity
+PASS  ground_truth has column observed_sales
+PASS  ground_truth has column dynamic_margin
+PASS  ground_truth has column fallback_availability
+PASS  observed_sales <= capacity (all rows)
+PASS  observed_sales <= latent_demand (all rows)
+PASS  mean dynamic margin 5.5% ±0.3pp: 0.0551 in [0.052,0.058]
+PASS  sell-out rate 10-45%: 0.3305 in [0.1,0.45]
+PASS  within-group corr > across-group + 0.05
+       within=0.363, across=0.012
+PASS  units_sold <= units in inventory_commit
+PASS  rooms_left >= 0 in quote
+PASS  byte-identical regeneration (same seed)
+PASS  different seeds produce different output
+PASS  no ground_truth in forecast/ or optimizer/
+PASS  candidate cell count 20-40: 27.0000 in [20,40]
+Results: 17 passed, 0 failed, 0 errors

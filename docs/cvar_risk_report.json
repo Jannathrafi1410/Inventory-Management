@@ -1,0 +1,38 @@
+{
+  "scenario_bundle": "data\\scenarios\\factor_scenarios_s1500_seed42_cs1.0.manifest.json",
+  "n_scenarios_saved": 1500,
+  "frontier_scenarios_used": 120,
+  "seed": 42,
+  "budget": 10000000.0,
+  "alpha": 0.95,
+  "reserve_fraction": 0.18,
+  "correlation_scale": 1.0,
+  "comparison_risk_neutral_vs_mean_cvar": {
+    "risk_neutral_beta0": {
+      "expected_uplift": 3625280.5730436496,
+      "cvar95": 1687230.9775339253,
+      "cash_spoilage": 215496.39155210275,
+      "spend": 8200000.000000001,
+      "beta": 0.0
+    },
+    "mean_cvar": {
+      "expected_uplift": 4002736.860329369,
+      "cvar95": 3127190.592451041,
+      "cash_spoilage": 33192.56062168613,
+      "spend": 8200000.0,
+      "beta": 0.5
+    },
+    "delta_cvar95": 1439959.6149171158,
+    "delta_expected_uplift": 377456.28728571953,
+    "delta_cash_spoilage": -182303.83093041662
+  },
+  "frontier_chart": "docs\\mean_cvar_frontier.png",
+  "tail_independent_vs_correlated_risk_neutral": {
+    "correlated_cvar95": 1687230.9775339253,
+    "independent_cvar95": 2772978.5591826574,
+    "independent_understates_tail_risk": true,
+    "correlated_expected": 3625280.5730436496,
+    "independent_expected": 3657706.4280794766
+  },
+  "assumptions": "Simulator outputs under stated assumptions; frontier solved on subset for tractability; full correlated bundle versioned to disk."
+}

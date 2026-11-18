@@ -1,0 +1,259 @@
+{
+  "assumption": "Simulator outputs under stated assumptions, not TBO real P&L. Paired bootstrap on CRN, 90% percentile CIs (2000 resamples). Two generator parameterisations checked to reduce overfitting to simulator defaults.",
+  "budget": 10000000.0,
+  "n_seeds": 10,
+  "scenarios_per_seed": 120,
+  "parameterisations": [
+    {
+      "name": "A_baseline",
+      "rho": 0.6,
+      "demand_scale": 1.0,
+      "sigma_scale": 1.0
+    },
+    {
+      "name": "B_alt_generator",
+      "rho": 0.85,
+      "demand_scale": 1.1,
+      "sigma_scale": 1.25
+    }
+  ],
+  "results": [
+    {
+      "param_set": "A_baseline",
+      "rho": 0.6,
+      "demand_scale": 1.0,
+      "sigma_scale": 1.0,
+      "rows": [
+        {
+          "strategy": "B0_no_prebuy",
+          "mean": 1177154.2708215131,
+          "ci90_lo": 1173751.6764899776,
+          "ci90_hi": 1180712.8505485049
+        },
+        {
+          "strategy": "B1_equal_split",
+          "mean": 4208995.241856688,
+          "ci90_lo": 4204497.522051813,
+          "ci90_hi": 4213395.1266292585
+        },
+        {
+          "strategy": "B2_volume_proportional",
+          "mean": 4235140.672996183,
+          "ci90_lo": 4230251.323780442,
+          "ci90_hi": 4240998.098183022
+        },
+        {
+          "strategy": "B3_mean_demand_newsvendor",
+          "mean": 4433341.5072545875,
+          "ci90_lo": 4418557.976825086,
+          "ci90_hi": 4448230.204586545
+        },
+        {
+          "strategy": "B4_correct_fractile_no_budget",
+          "mean": 4295831.688171601,
+          "ci90_lo": 4291849.366202289,
+          "ci90_hi": 4300102.276470692
+        },
+        {
+          "strategy": "Planner",
+          "mean": 4636740.147523087,
+          "ci90_lo": 4619248.469435255,
+          "ci90_hi": 4655259.24091355
+        }
+      ],
+      "comparisons": [
+        {
+          "planner_minus": "B1_equal_split",
+          "mean_diff": 427744.9056664008,
+          "ci90_lo": 411049.5654349719,
+          "ci90_hi": 445244.0106122474,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B2_volume_proportional",
+          "mean_diff": 401599.47452690435,
+          "ci90_lo": 384111.99534205545,
+          "ci90_hi": 419327.1910000948,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B3_mean_demand_newsvendor",
+          "mean_diff": 203398.64026850107,
+          "ci90_lo": 187137.0161232218,
+          "ci90_hi": 218811.90151950743,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B0_no_prebuy",
+          "mean_diff": 3459585.876701575,
+          "ci90_lo": 3442584.3675224944,
+          "ci90_hi": 3477205.1943843584,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B4_correct_fractile_no_budget",
+          "mean_diff": 340908.4593514869,
+          "ci90_lo": 323539.5802998984,
+          "ci90_hi": 358838.14540735836,
+          "planner_better_ci90": true
+        }
+      ],
+      "raw_means": {
+        "B0_no_prebuy": 1177154.2708215131,
+        "B1_equal_split": 4208995.241856688,
+        "B2_volume_proportional": 4235140.672996183,
+        "B3_mean_demand_newsvendor": 4433341.5072545875,
+        "B4_correct_fractile_no_budget": 4295831.688171601,
+        "Planner": 4636740.147523087
+      }
+    },
+    {
+      "param_set": "B_alt_generator",
+      "rho": 0.85,
+      "demand_scale": 1.1,
+      "sigma_scale": 1.25,
+      "rows": [
+        {
+          "strategy": "B0_no_prebuy",
+          "mean": 1294124.1323140315,
+          "ci90_lo": 1287690.346601713,
+          "ci90_hi": 1300969.3655050164
+        },
+        {
+          "strategy": "B1_equal_split",
+          "mean": 4341811.488465343,
+          "ci90_lo": 4333633.702339457,
+          "ci90_hi": 4350437.878163197
+        },
+        {
+          "strategy": "B2_volume_proportional",
+          "mean": 4360494.086086015,
+          "ci90_lo": 4351859.950768229,
+          "ci90_hi": 4369225.331233402
+        },
+        {
+          "strategy": "B3_mean_demand_newsvendor",
+          "mean": 4636226.278301135,
+          "ci90_lo": 4613398.9146434795,
+          "ci90_hi": 4659334.190377575
+        },
+        {
+          "strategy": "B4_correct_fractile_no_budget",
+          "mean": 4421491.044347068,
+          "ci90_lo": 4414244.030371739,
+          "ci90_hi": 4429162.4501822535
+        },
+        {
+          "strategy": "Planner",
+          "mean": 4764465.087384648,
+          "ci90_lo": 4744545.693985436,
+          "ci90_hi": 4783301.339772105
+        }
+      ],
+      "comparisons": [
+        {
+          "planner_minus": "B1_equal_split",
+          "mean_diff": 422653.5989193042,
+          "ci90_lo": 406811.0637427972,
+          "ci90_hi": 438762.75262715685,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B2_volume_proportional",
+          "mean_diff": 403971.0012986321,
+          "ci90_lo": 387030.8388577894,
+          "ci90_hi": 419876.54481238924,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B3_mean_demand_newsvendor",
+          "mean_diff": 128238.80908351252,
+          "ci90_lo": 108279.88319490443,
+          "ci90_hi": 145134.92478121433,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B0_no_prebuy",
+          "mean_diff": 3470340.9550706157,
+          "ci90_lo": 3453807.151561483,
+          "ci90_hi": 3487121.212674151,
+          "planner_better_ci90": true
+        },
+        {
+          "planner_minus": "B4_correct_fractile_no_budget",
+          "mean_diff": 342974.0430375786,
+          "ci90_lo": 326418.38170082093,
+          "ci90_hi": 359874.519975839,
+          "planner_better_ci90": true
+        }
+      ],
+      "raw_means": {
+        "B0_no_prebuy": 1294124.1323140315,
+        "B1_equal_split": 4341811.488465343,
+        "B2_volume_proportional": 4360494.086086015,
+        "B3_mean_demand_newsvendor": 4636226.278301135,
+        "B4_correct_fractile_no_budget": 4421491.044347068,
+        "Planner": 4764465.087384648
+      }
+    }
+  ],
+  "summary": {
+    "robust_planner_beats_b1_b3_mean_both": true,
+    "checks": [
+      {
+        "param_set": "A_baseline",
+        "planner_minus": "B1_equal_split",
+        "mean_diff": 427744.9056664008,
+        "ci90_lo": 411049.5654349719,
+        "ci90_hi": 445244.0106122474,
+        "planner_better_ci90": true,
+        "pass": true
+      },
+      {
+        "param_set": "A_baseline",
+        "planner_minus": "B2_volume_proportional",
+        "mean_diff": 401599.47452690435,
+        "ci90_lo": 384111.99534205545,
+        "ci90_hi": 419327.1910000948,
+        "planner_better_ci90": true,
+        "pass": true
+      },
+      {
+        "param_set": "A_baseline",
+        "planner_minus": "B3_mean_demand_newsvendor",
+        "mean_diff": 203398.64026850107,
+        "ci90_lo": 187137.0161232218,
+        "ci90_hi": 218811.90151950743,
+        "planner_better_ci90": true,
+        "pass": true
+      },
+      {
+        "param_set": "B_alt_generator",
+        "planner_minus": "B1_equal_split",
+        "mean_diff": 422653.5989193042,
+        "ci90_lo": 406811.0637427972,
+        "ci90_hi": 438762.75262715685,
+        "planner_better_ci90": true,
+        "pass": true
+      },
+      {
+        "param_set": "B_alt_generator",
+        "planner_minus": "B2_volume_proportional",
+        "mean_diff": 403971.0012986321,
+        "ci90_lo": 387030.8388577894,
+        "ci90_hi": 419876.54481238924,
+        "planner_better_ci90": true,
+        "pass": true
+      },
+      {
+        "param_set": "B_alt_generator",
+        "planner_minus": "B3_mean_demand_newsvendor",
+        "mean_diff": 128238.80908351252,
+        "ci90_lo": 108279.88319490443,
+        "ci90_hi": 145134.92478121433,
+        "planner_better_ci90": true,
+        "pass": true
+      }
+    ]
+  }
+}

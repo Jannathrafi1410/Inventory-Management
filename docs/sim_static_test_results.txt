@@ -1,0 +1,62 @@
+PASS  search_event schema has required cols
+PASS  quote schema has required cols
+PASS  booking schema has required cols
+PASS  cancellation schema has required cols
+PASS  inventory_commit schema has required cols
+PASS  external_signal schema has required cols
+PASS  6 required tables in schema
+PASS  cell count 20-40: 27 in [20, 40]
+PASS  DXB-NYE anchor cell present
+PASS  DXB-DEC anchor cell present
+PASS  AIR-BOMDXB anchor cell present
+PASS  DXB-NYE p=21000
+PASS  DXB-NYE c_d=19845
+PASS  DXB-NYE c_b=13495
+PASS  DXB-NYE k=13495
+PASS  DXB-NYE r=0.0
+PASS  DXB-NYE a=0.55
+PASS  DXB-NYE g=900
+PASS  DXB-NYE contract=hard_buyout
+PASS  DXB-DEC p=14500
+PASS  DXB-DEC c_b=9592
+PASS  DXB-DEC r=0.70
+PASS  DXB-DEC a=0.78
+PASS  DXB-DEC contract=soft_release
+PASS  at least 2 free-allotment cells
+PASS  DXB-FREE-JAN k=0
+PASS  DXB-FREE-JAN r=1.0
+PASS  BKK-FREE-MAR k=0
+PASS  BKK-FREE-MAR r=1.0
+PASS  IST-FREE-SPR k=0
+PASS  IST-FREE-SPR r=1.0
+PASS  HKT-FREE-MAY k=0
+PASS  HKT-FREE-MAY r=1.0
+PASS  MLE-FREE-FEB k=0
+PASS  MLE-FREE-FEB r=1.0
+PASS  multiple region groups (shocks correlated by group)
+       region groups: ['EU', 'GCC', 'IO', 'SEA', 'TUR']
+PASS  hotel cells present
+PASS  air cells present
+PASS  stable_label_seed deterministic
+PASS  different labels → different seeds
+PASS  different master seeds → different
+PASS  get_rng same seed/label → identical stream
+PASS  get_rng different labels → independent
+PASS  carry annual_rate=0.12
+PASS  carry lock_days=120
+PASS  market dynamic_margin=0.055
+PASS  risk alpha=0.95
+PASS  risk beta=0.5
+PASS  4 contract types
+PASS  free_allotment k=0
+PASS  hard_buyout r=0
+PASS  soft_release r=0.7
+PASS  no ground_truth in forecast/ or optimizer/
+PASS  doc file exists: docs/architecture.md
+PASS  doc file exists: docs/assumptions.md
+PASS  doc file exists: docs/limitations.md
+PASS  doc file exists: docs/deck_outline.md
+PASS  doc file exists: docs/video_script.md
+PASS  doc file exists: docs/demo_script.md
+PASS  doc file exists: docs/baseline_metrics.md
+Results: 60 passed, 0 failed, 0 errors

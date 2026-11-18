@@ -1,0 +1,21 @@
+PASS  core imports: Cell, optimal_fractile, expected_profit, waterfill
+PASS  DXB-NYE delta_m: got=7274.75, expected=7274.75
+PASS  DXB-NYE c_o: got=13495.0, expected=13495.0
+PASS  DXB-NYE F(lock=0): got=0.35025698431613284, expected=0.3502
+PASS  DXB-DEC delta_m: got=4285.5599999999995, expected=4285.56
+PASS  DXB-DEC c_o: got=2877.6000000000004, expected=2877.6
+PASS  DXB-DEC F(lock=0): got=0.5982778550248772, expected=0.5982
+PASS  free allotment c_o=0: got=0.0, expected=0.0
+PASS  free allotment F=1.0: got=1.0, expected=1.0
+PASS  a=1,c_d=c_b delta_m=0: got=0.0, expected=0.0
+PASS  a=1,c_d=c_b F=0: got=0.0, expected=0.0
+PASS  newsvendor F=(p-c_b)/p: got=0.3, expected=0.3
+PASS  waterfill spend<=budget: got=799798.4846673247, expected=800000.0
+PASS  waterfill spend<=budget (exact): got=True, expected=True
+PASS  lambda=0 non-binding budget: got=True, expected=True
+PASS  tiny budget free-cell still allocated: got=True, expected=True
+PASS  tiny budget spend<=50k: got=True, expected=True
+PASS  brute-force vs fractile <=2%: got=True, expected=True
+PASS  correct_fractile > naive_newsvendor on DXB-DEC: got=True, expected=True
+PASS  no ground_truth in forecast/ or optimizer/: got=True, expected=True
+Results: 20 passed, 0 failed, 0 errors

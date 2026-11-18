@@ -1,0 +1,802 @@
+{
+  "assumption": "Simulator outputs under stated assumptions, not TBO real P&L. Demand shifted by (p/p0)^epsilon with segment elasticities; dynamic cost pass-through tau=0.30 on c_d; q*(p) unconstrained fractile-capped re-solve per grid point.",
+  "budget_ref_inr": 10000000.0,
+  "n_scenarios": 120,
+  "seed": 42,
+  "price_grid": [
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    1.0,
+    1.02,
+    1.04,
+    1.06,
+    1.08,
+    1.1,
+    1.12,
+    1.14,
+    1.16
+  ],
+  "optimizations": [
+    {
+      "cell_id": "DXB-NYE",
+      "segment": "event",
+      "epsilon": -0.8,
+      "p0": 21000.0,
+      "argmax_multiplier": 1.16,
+      "argmax_price": 24360.0,
+      "argmax_q": 113.84333724765835,
+      "argmax_expected_profit": 997277.817061359,
+      "flatness": {
+        "max_profit_inr": 997277.817061359,
+        "worst_grid_profit_inr": 432319.05361920677,
+        "max_profit_loss_pct_vs_optimum": 56.65008824791621,
+        "share_grid_within_1pct_of_optimum_pct": 6.666666666666667,
+        "profit_range_inr": 564958.7634421522
+      },
+      "grid": [
+        {
+          "multiplier": 0.88,
+          "price": 18480.0,
+          "c_d": 19089.0,
+          "q_opt": 120.0,
+          "expected_profit": 432319.05361920677
+        },
+        {
+          "multiplier": 0.9,
+          "price": 18900.0,
+          "c_d": 19215.0,
+          "q_opt": 120.0,
+          "expected_profit": 481807.3028253572
+        },
+        {
+          "multiplier": 0.92,
+          "price": 19320.0,
+          "c_d": 19341.0,
+          "q_opt": 120.0,
+          "expected_profit": 530079.8465491789
+        },
+        {
+          "multiplier": 0.94,
+          "price": 19740.0,
+          "c_d": 19467.0,
+          "q_opt": 120.0,
+          "expected_profit": 577107.5447953608
+        },
+        {
+          "multiplier": 0.96,
+          "price": 20160.0,
+          "c_d": 19593.0,
+          "q_opt": 120.0,
+          "expected_profit": 622658.7963810296
+        },
+        {
+          "multiplier": 0.98,
+          "price": 20580.0,
+          "c_d": 19719.0,
+          "q_opt": 120.0,
+          "expected_profit": 665896.3932008211
+        },
+        {
+          "multiplier": 1.0,
+          "price": 21000.0,
+          "c_d": 19845.0,
+          "q_opt": 120.0,
+          "expected_profit": 707695.8129333606
+        },
+        {
+          "multiplier": 1.02,
+          "price": 21420.0,
+          "c_d": 19971.0,
+          "q_opt": 120.0,
+          "expected_profit": 748660.3948251486
+        },
+        {
+          "multiplier": 1.04,
+          "price": 21840.0,
+          "c_d": 20097.0,
+          "q_opt": 120.0,
+          "expected_profit": 788744.4177529752
+        },
+        {
+          "multiplier": 1.06,
+          "price": 22260.0,
+          "c_d": 20223.0,
+          "q_opt": 120.0,
+          "expected_profit": 827499.6100153975
+        },
+        {
+          "multiplier": 1.08,
+          "price": 22680.0,
+          "c_d": 20349.0,
+          "q_opt": 119.91027943815638,
+          "expected_profit": 863998.7541023453
+        },
+        {
+          "multiplier": 1.1,
+          "price": 23100.000000000004,
+          "c_d": 20475.0,
+          "q_opt": 118.20096898997178,
+          "expected_profit": 898651.7568670028
+        },
+        {
+          "multiplier": 1.12,
+          "price": 23520.000000000004,
+          "c_d": 20601.0,
+          "q_opt": 116.79898993255766,
+          "expected_profit": 932390.7063869371
+        },
+        {
+          "multiplier": 1.14,
+          "price": 23939.999999999996,
+          "c_d": 20727.0,
+          "q_opt": 115.32718357324626,
+          "expected_profit": 965256.1879616359
+        },
+        {
+          "multiplier": 1.16,
+          "price": 24360.0,
+          "c_d": 20853.0,
+          "q_opt": 113.84333724765835,
+          "expected_profit": 997277.817061359
+        }
+      ]
+    },
+    {
+      "cell_id": "DXB-DEC",
+      "segment": "leisure",
+      "epsilon": -2.5,
+      "p0": 14500.0,
+      "argmax_multiplier": 1.16,
+      "argmax_price": 16820.0,
+      "argmax_q": 120.1661684152596,
+      "argmax_expected_profit": 652606.9269029752,
+      "flatness": {
+        "max_profit_inr": 652606.9269029752,
+        "worst_grid_profit_inr": 337403.6611582976,
+        "max_profit_loss_pct_vs_optimum": 48.29909900596867,
+        "share_grid_within_1pct_of_optimum_pct": 20.0,
+        "profit_range_inr": 315203.26574467757
+      },
+      "grid": [
+        {
+          "multiplier": 0.88,
+          "price": 12760.0,
+          "c_d": 13180.0,
+          "q_opt": 150.0,
+          "expected_profit": 337403.6611582976
+        },
+        {
+          "multiplier": 0.9,
+          "price": 13050.0,
+          "c_d": 13267.0,
+          "q_opt": 150.0,
+          "expected_profit": 387416.20822049753
+        },
+        {
+          "multiplier": 0.92,
+          "price": 13340.0,
+          "c_d": 13354.0,
+          "q_opt": 150.0,
+          "expected_profit": 432797.84718938975
+        },
+        {
+          "multiplier": 0.94,
+          "price": 13630.0,
+          "c_d": 13441.0,
+          "q_opt": 150.0,
+          "expected_profit": 474112.2832863519
+        },
+        {
+          "multiplier": 0.96,
+          "price": 13920.0,
+          "c_d": 13528.0,
+          "q_opt": 150.0,
+          "expected_profit": 509828.09238813515
+        },
+        {
+          "multiplier": 0.98,
+          "price": 14210.0,
+          "c_d": 13615.0,
+          "q_opt": 150.0,
+          "expected_profit": 542458.1463291056
+        },
+        {
+          "multiplier": 1.0,
+          "price": 14500.0,
+          "c_d": 13702.0,
+          "q_opt": 150.0,
+          "expected_profit": 572474.8156414137
+        },
+        {
+          "multiplier": 1.02,
+          "price": 14790.0,
+          "c_d": 13789.0,
+          "q_opt": 150.0,
+          "expected_profit": 597600.5175188793
+        },
+        {
+          "multiplier": 1.04,
+          "price": 15080.0,
+          "c_d": 13876.0,
+          "q_opt": 150.0,
+          "expected_profit": 616626.123452648
+        },
+        {
+          "multiplier": 1.06,
+          "price": 15370.0,
+          "c_d": 13963.0,
+          "q_opt": 149.49606047913304,
+          "expected_profit": 628742.8724836824
+        },
+        {
+          "multiplier": 1.08,
+          "price": 15660.000000000002,
+          "c_d": 14050.0,
+          "q_opt": 143.0038889848141,
+          "expected_profit": 636062.8129428662
+        },
+        {
+          "multiplier": 1.1,
+          "price": 15950.000000000002,
+          "c_d": 14137.0,
+          "q_opt": 136.59277104260931,
+          "expected_profit": 641967.9843177516
+        },
+        {
+          "multiplier": 1.12,
+          "price": 16240.000000000002,
+          "c_d": 14224.0,
+          "q_opt": 130.57630406323756,
+          "expected_profit": 646599.2115257893
+        },
+        {
+          "multiplier": 1.14,
+          "price": 16530.0,
+          "c_d": 14311.0,
+          "q_opt": 125.09166413658426,
+          "expected_profit": 650102.6636391019
+        },
+        {
+          "multiplier": 1.16,
+          "price": 16820.0,
+          "c_d": 14398.0,
+          "q_opt": 120.1661684152596,
+          "expected_profit": 652606.9269029752
+        }
+      ]
+    },
+    {
+      "cell_id": "AIR-BOMDXB",
+      "segment": "mixed",
+      "epsilon": -0.8,
+      "p0": 34000.0,
+      "argmax_multiplier": 1.16,
+      "argmax_price": 39440.0,
+      "argmax_q": 50.54099897864677,
+      "argmax_expected_profit": 427751.19671391894,
+      "flatness": {
+        "max_profit_inr": 427751.19671391894,
+        "worst_grid_profit_inr": -82029.40783019707,
+        "max_profit_loss_pct_vs_optimum": 119.1768973319924,
+        "share_grid_within_1pct_of_optimum_pct": 6.666666666666667,
+        "profit_range_inr": 509780.604544116
+      },
+      "grid": [
+        {
+          "multiplier": 0.88,
+          "price": 29920.0,
+          "c_d": 31976.0,
+          "q_opt": 43.436619919679465,
+          "expected_profit": -82029.40783019707
+        },
+        {
+          "multiplier": 0.9,
+          "price": 30600.0,
+          "c_d": 32180.0,
+          "q_opt": 46.76552145883486,
+          "expected_profit": -40316.56191762532
+        },
+        {
+          "multiplier": 0.92,
+          "price": 31280.0,
+          "c_d": 32384.0,
+          "q_opt": 48.007401610849556,
+          "expected_profit": 419.0851824007356
+        },
+        {
+          "multiplier": 0.94,
+          "price": 31960.0,
+          "c_d": 32588.0,
+          "q_opt": 48.17835575086806,
+          "expected_profit": 40175.54852508398
+        },
+        {
+          "multiplier": 0.96,
+          "price": 32640.0,
+          "c_d": 32792.0,
+          "q_opt": 49.80242707185891,
+          "expected_profit": 79006.29988071478
+        },
+        {
+          "multiplier": 0.98,
+          "price": 33320.0,
+          "c_d": 32996.0,
+          "q_opt": 50.892483629663666,
+          "expected_profit": 117311.68441120577
+        },
+        {
+          "multiplier": 1.0,
+          "price": 34000.0,
+          "c_d": 33200.0,
+          "q_opt": 54.07251113226959,
+          "expected_profit": 155386.7178099339
+        },
+        {
+          "multiplier": 1.02,
+          "price": 34680.0,
+          "c_d": 33404.0,
+          "q_opt": 54.48823591544057,
+          "expected_profit": 192653.74526374793
+        },
+        {
+          "multiplier": 1.04,
+          "price": 35360.0,
+          "c_d": 33608.0,
+          "q_opt": 54.36090969204142,
+          "expected_profit": 229095.98795611924
+        },
+        {
+          "multiplier": 1.06,
+          "price": 36040.0,
+          "c_d": 33812.0,
+          "q_opt": 53.80280923835859,
+          "expected_profit": 264575.87126854
+        },
+        {
+          "multiplier": 1.08,
+          "price": 36720.0,
+          "c_d": 34016.0,
+          "q_opt": 53.21722226776361,
+          "expected_profit": 299047.38594265556
+        },
+        {
+          "multiplier": 1.1,
+          "price": 37400.0,
+          "c_d": 34220.0,
+          "q_opt": 52.44524978117451,
+          "expected_profit": 332564.4330899792
+        },
+        {
+          "multiplier": 1.12,
+          "price": 38080.0,
+          "c_d": 34424.0,
+          "q_opt": 51.830589130179696,
+          "expected_profit": 365152.8982567798
+        },
+        {
+          "multiplier": 1.14,
+          "price": 38760.0,
+          "c_d": 34628.0,
+          "q_opt": 51.18412277164248,
+          "expected_profit": 396871.8521943612
+        },
+        {
+          "multiplier": 1.16,
+          "price": 39440.0,
+          "c_d": 34832.0,
+          "q_opt": 50.54099897864677,
+          "expected_profit": 427751.19671391894
+        }
+      ]
+    },
+    {
+      "cell_id": "SIN-F1",
+      "segment": "event",
+      "epsilon": -0.8,
+      "p0": 26000.0,
+      "argmax_multiplier": 1.16,
+      "argmax_price": 30159.999999999996,
+      "argmax_q": 69.08784636099107,
+      "argmax_expected_profit": 730979.2932512874,
+      "flatness": {
+        "max_profit_inr": 730979.2932512874,
+        "worst_grid_profit_inr": 266818.1053020368,
+        "max_profit_loss_pct_vs_optimum": 63.498541235652596,
+        "share_grid_within_1pct_of_optimum_pct": 6.666666666666667,
+        "profit_range_inr": 464161.1879492506
+      },
+      "grid": [
+        {
+          "multiplier": 0.88,
+          "price": 22880.0,
+          "c_d": 23634.0,
+          "q_opt": 70.0,
+          "expected_profit": 266818.1053020368
+        },
+        {
+          "multiplier": 0.9,
+          "price": 23400.0,
+          "c_d": 23790.0,
+          "q_opt": 70.0,
+          "expected_profit": 307596.72623199335
+        },
+        {
+          "multiplier": 0.92,
+          "price": 23920.0,
+          "c_d": 23946.0,
+          "q_opt": 70.0,
+          "expected_profit": 347251.59060636983
+        },
+        {
+          "multiplier": 0.94,
+          "price": 24440.0,
+          "c_d": 24102.0,
+          "q_opt": 70.0,
+          "expected_profit": 385980.7012922471
+        },
+        {
+          "multiplier": 0.96,
+          "price": 24960.0,
+          "c_d": 24258.0,
+          "q_opt": 70.0,
+          "expected_profit": 423696.0453878491
+        },
+        {
+          "multiplier": 0.98,
+          "price": 25480.0,
+          "c_d": 24414.0,
+          "q_opt": 70.0,
+          "expected_profit": 459673.20902440633
+        },
+        {
+          "multiplier": 1.0,
+          "price": 26000.0,
+          "c_d": 24570.0,
+          "q_opt": 70.0,
+          "expected_profit": 494485.96709006955
+        },
+        {
+          "multiplier": 1.02,
+          "price": 26520.0,
+          "c_d": 24726.0,
+          "q_opt": 70.0,
+          "expected_profit": 528023.8838137726
+        },
+        {
+          "multiplier": 1.04,
+          "price": 27040.0,
+          "c_d": 24882.0,
+          "q_opt": 70.0,
+          "expected_profit": 560031.7776260921
+        },
+        {
+          "multiplier": 1.06,
+          "price": 27560.0,
+          "c_d": 25038.0,
+          "q_opt": 70.0,
+          "expected_profit": 590868.7001926933
+        },
+        {
+          "multiplier": 1.08,
+          "price": 28080.000000000004,
+          "c_d": 25194.0,
+          "q_opt": 70.0,
+          "expected_profit": 620736.8938044287
+        },
+        {
+          "multiplier": 1.1,
+          "price": 28600.000000000004,
+          "c_d": 25350.0,
+          "q_opt": 70.0,
+          "expected_profit": 649379.416982086
+        },
+        {
+          "multiplier": 1.12,
+          "price": 29120.000000000004,
+          "c_d": 25506.0,
+          "q_opt": 69.86143920608077,
+          "expected_profit": 677212.7953412987
+        },
+        {
+          "multiplier": 1.14,
+          "price": 29639.999999999996,
+          "c_d": 25662.0,
+          "q_opt": 69.80289073441425,
+          "expected_profit": 704395.1244202704
+        },
+        {
+          "multiplier": 1.16,
+          "price": 30159.999999999996,
+          "c_d": 25818.0,
+          "q_opt": 69.08784636099107,
+          "expected_profit": 730979.2932512874
+        }
+      ]
+    },
+    {
+      "cell_id": "MLE-DEC",
+      "segment": "leisure",
+      "epsilon": -2.5,
+      "p0": 42000.0,
+      "argmax_multiplier": 1.16,
+      "argmax_price": 48720.0,
+      "argmax_q": 28.825616243858722,
+      "argmax_expected_profit": 483231.3058979491,
+      "flatness": {
+        "max_profit_inr": 483231.3058979491,
+        "worst_grid_profit_inr": 134846.22552771855,
+        "max_profit_loss_pct_vs_optimum": 72.09489040095511,
+        "share_grid_within_1pct_of_optimum_pct": 6.666666666666667,
+        "profit_range_inr": 348385.08037023054
+      },
+      "grid": [
+        {
+          "multiplier": 0.88,
+          "price": 36960.0,
+          "c_d": 38178.0,
+          "q_opt": 40.0,
+          "expected_profit": 134846.22552771855
+        },
+        {
+          "multiplier": 0.9,
+          "price": 37800.0,
+          "c_d": 38430.0,
+          "q_opt": 40.0,
+          "expected_profit": 183836.5387667155
+        },
+        {
+          "multiplier": 0.92,
+          "price": 38640.0,
+          "c_d": 38682.0,
+          "q_opt": 40.0,
+          "expected_profit": 229556.6025156252
+        },
+        {
+          "multiplier": 0.94,
+          "price": 39480.0,
+          "c_d": 38934.0,
+          "q_opt": 40.0,
+          "expected_profit": 272360.8997594982
+        },
+        {
+          "multiplier": 0.96,
+          "price": 40320.0,
+          "c_d": 39186.0,
+          "q_opt": 40.0,
+          "expected_profit": 312560.6045514928
+        },
+        {
+          "multiplier": 0.98,
+          "price": 41160.0,
+          "c_d": 39438.0,
+          "q_opt": 40.0,
+          "expected_profit": 350429.539422421
+        },
+        {
+          "multiplier": 1.0,
+          "price": 42000.0,
+          "c_d": 39690.0,
+          "q_opt": 40.0,
+          "expected_profit": 385764.9233561481
+        },
+        {
+          "multiplier": 1.02,
+          "price": 42840.0,
+          "c_d": 39942.0,
+          "q_opt": 39.24036176651556,
+          "expected_profit": 408135.3633300705
+        },
+        {
+          "multiplier": 1.04,
+          "price": 43680.0,
+          "c_d": 40194.0,
+          "q_opt": 37.418033370667104,
+          "expected_profit": 423933.81706183054
+        },
+        {
+          "multiplier": 1.06,
+          "price": 44520.0,
+          "c_d": 40446.0,
+          "q_opt": 35.69479364347746,
+          "expected_profit": 437728.75002491946
+        },
+        {
+          "multiplier": 1.08,
+          "price": 45360.0,
+          "c_d": 40698.0,
+          "q_opt": 34.065446828172156,
+          "expected_profit": 449725.2712790348
+        },
+        {
+          "multiplier": 1.1,
+          "price": 46200.00000000001,
+          "c_d": 40950.0,
+          "q_opt": 32.55833181242159,
+          "expected_profit": 460111.4569486379
+        },
+        {
+          "multiplier": 1.12,
+          "price": 47040.00000000001,
+          "c_d": 41202.0,
+          "q_opt": 31.126301035095697,
+          "expected_profit": 469051.2503547184
+        },
+        {
+          "multiplier": 1.14,
+          "price": 47879.99999999999,
+          "c_d": 41454.0,
+          "q_opt": 29.949663773010705,
+          "expected_profit": 476706.9778469875
+        },
+        {
+          "multiplier": 1.16,
+          "price": 48720.0,
+          "c_d": 41706.0,
+          "q_opt": 28.825616243858722,
+          "expected_profit": 483231.3058979491
+        }
+      ]
+    }
+  ],
+  "markdown_ladders": [
+    {
+      "cell_id": "DXB-NYE",
+      "q_committed": 113.84333724765835,
+      "salvage_per_unit_inr": 0.0,
+      "ladder": [
+        {
+          "days_to_release": 14,
+          "multiplier": 0.88,
+          "price": 18480.0,
+          "sell_prob_marginal": 0.8666666666666667,
+          "marginal_expected_margin_vs_salvage_inr": 4320.333333333333,
+          "markdown_needed": false
+        },
+        {
+          "days_to_release": 7,
+          "multiplier": 0.88,
+          "price": 18480.0,
+          "sell_prob_marginal": 0.8666666666666667,
+          "marginal_expected_margin_vs_salvage_inr": 4320.333333333333,
+          "markdown_needed": false
+        },
+        {
+          "days_to_release": 3,
+          "multiplier": 0.88,
+          "price": 18480.0,
+          "sell_prob_marginal": 0.8666666666666667,
+          "marginal_expected_margin_vs_salvage_inr": 4320.333333333333,
+          "markdown_needed": false
+        }
+      ]
+    },
+    {
+      "cell_id": "DXB-DEC",
+      "q_committed": 120.1661684152596,
+      "salvage_per_unit_inr": 6714.4,
+      "ladder": [
+        {
+          "days_to_release": 14,
+          "multiplier": 0.88,
+          "price": 12760.0,
+          "sell_prob_marginal": 0.8916666666666667,
+          "marginal_expected_margin_vs_salvage_inr": -3889.5999999999995,
+          "markdown_needed": true
+        },
+        {
+          "days_to_release": 7,
+          "multiplier": 0.88,
+          "price": 12760.0,
+          "sell_prob_marginal": 0.8916666666666667,
+          "marginal_expected_margin_vs_salvage_inr": -3889.5999999999995,
+          "markdown_needed": true
+        },
+        {
+          "days_to_release": 3,
+          "multiplier": 0.88,
+          "price": 12760.0,
+          "sell_prob_marginal": 0.8916666666666667,
+          "marginal_expected_margin_vs_salvage_inr": -3889.5999999999995,
+          "markdown_needed": true
+        }
+      ]
+    },
+    {
+      "cell_id": "AIR-BOMDXB",
+      "q_committed": 50.54099897864677,
+      "salvage_per_unit_inr": 8850.0,
+      "ladder": [
+        {
+          "days_to_release": 14,
+          "multiplier": 0.88,
+          "price": 29920.0,
+          "sell_prob_marginal": 0.925,
+          "marginal_expected_margin_vs_salvage_inr": -8461.5,
+          "markdown_needed": true
+        },
+        {
+          "days_to_release": 7,
+          "multiplier": 0.88,
+          "price": 29920.0,
+          "sell_prob_marginal": 0.9333333333333333,
+          "marginal_expected_margin_vs_salvage_inr": -8458.0,
+          "markdown_needed": true
+        },
+        {
+          "days_to_release": 3,
+          "multiplier": 0.88,
+          "price": 29920.0,
+          "sell_prob_marginal": 0.9416666666666667,
+          "marginal_expected_margin_vs_salvage_inr": -8454.5,
+          "markdown_needed": true
+        }
+      ]
+    },
+    {
+      "cell_id": "SIN-F1",
+      "q_committed": 69.08784636099107,
+      "salvage_per_unit_inr": 0.0,
+      "ladder": [
+        {
+          "days_to_release": 14,
+          "multiplier": 0.88,
+          "price": 22880.0,
+          "sell_prob_marginal": 0.9833333333333333,
+          "marginal_expected_margin_vs_salvage_inr": 4798.666666666666,
+          "markdown_needed": false
+        },
+        {
+          "days_to_release": 7,
+          "multiplier": 0.88,
+          "price": 22880.0,
+          "sell_prob_marginal": 0.9916666666666667,
+          "marginal_expected_margin_vs_salvage_inr": 4839.333333333333,
+          "markdown_needed": false
+        },
+        {
+          "days_to_release": 3,
+          "multiplier": 0.88,
+          "price": 22880.0,
+          "sell_prob_marginal": 1.0,
+          "marginal_expected_margin_vs_salvage_inr": 4880.0,
+          "markdown_needed": false
+        }
+      ]
+    },
+    {
+      "cell_id": "MLE-DEC",
+      "q_committed": 28.825616243858722,
+      "salvage_per_unit_inr": 22050.0,
+      "ladder": [
+        {
+          "days_to_release": 14,
+          "multiplier": 0.88,
+          "price": 36960.0,
+          "sell_prob_marginal": 1.0,
+          "marginal_expected_margin_vs_salvage_inr": -16590.0,
+          "markdown_needed": true
+        },
+        {
+          "days_to_release": 7,
+          "multiplier": 0.88,
+          "price": 36960.0,
+          "sell_prob_marginal": 1.0,
+          "marginal_expected_margin_vs_salvage_inr": -16590.0,
+          "markdown_needed": true
+        },
+        {
+          "days_to_release": 3,
+          "multiplier": 0.88,
+          "price": 36960.0,
+          "sell_prob_marginal": 1.0,
+          "marginal_expected_margin_vs_salvage_inr": -16590.0,
+          "markdown_needed": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tbo-inventory-optimization"
+version = "0.1.0"
+description = "TBO Inventory Optimization hackathon prototype (Phase 0 skeleton)."
+requires-python = "==3.11.*"
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "scipy==1.13.1",
+  "lightgbm==4.5.0",
+  "scikit-learn==1.5.1",
+  "duckdb==1.1.3",
+  "highspy==1.7.2",
+  "pytest==8.3.2",
+  "PyYAML==6.0.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["config*", "sim*", "data*", "forecast*", "optimizer*", "api*", "ui*", "eval*", "tests*", "docs*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

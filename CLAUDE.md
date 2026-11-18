@@ -1,0 +1,1 @@
+Before any task, read docs/PROJECT_CONTEXT.md, docs/PROGRESS.md and docs/DECISIONS.md. After any change, update PROGRESS.md and DECISIONS.md. Never delete passing tests. Never change the math in section B without recording it in DECISIONS.md.

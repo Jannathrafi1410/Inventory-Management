@@ -1,0 +1,314 @@
+{
+  "exploration": {
+    "budget": 10000000.0,
+    "exploration_fraction": 0.03,
+    "exploration_budget_inr": 300000.0,
+    "exploration_spend_inr": 300000.0,
+    "n_eligible": 12,
+    "allocations": [
+      {
+        "cell_id": "DXB-NYE",
+        "cluster": "GCC|event|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 7274.749999999999,
+        "posterior_var": 10000.0,
+        "thompson_sample": 7321.011108851938,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "DXB-DEC",
+        "cluster": "GCC|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 4285.55996763723,
+        "posterior_var": 10000.0,
+        "thompson_sample": 4418.100773662012,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "AIR-BOMDXB",
+        "cluster": "GCC|mixed|air",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 3860.0,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3937.61969059162,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "BKK-SONGKRAN",
+        "cluster": "SEA|event|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 2236.6004346756613,
+        "posterior_var": 10000.0,
+        "thompson_sample": 2178.5257244098975,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "SIN-F1",
+        "cluster": "SEA|event|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 7884.9991205350425,
+        "posterior_var": 10000.0,
+        "thompson_sample": 7985.522533465335,
+        "explore_units": 2.454166051809778,
+        "explore_cash_inr": 44174.98893257601
+      },
+      {
+        "cell_id": "MLE-DEC",
+        "cluster": "IO|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 9122.997763797179,
+        "posterior_var": 10000.0,
+        "thompson_sample": 9066.841928180502,
+        "explore_units": 1.5922769210702754,
+        "explore_cash_inr": 50156.72301371367
+      },
+      {
+        "cell_id": "PAR-SUM",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 4011.499960409991,
+        "posterior_var": 10000.0,
+        "thompson_sample": 4075.9169127659065,
+        "explore_units": 1.6338769494181102,
+        "explore_cash_inr": 22547.50190196992
+      },
+      {
+        "cell_id": "LON-SUM",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 4257.27989897455,
+        "posterior_var": 10000.0,
+        "thompson_sample": 4186.694054965783,
+        "explore_units": 1.597262639052177,
+        "explore_cash_inr": 23160.308266256565
+      },
+      {
+        "cell_id": "ROM-SUM",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3737.550020455905,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3624.7237620674787,
+        "explore_units": 1.5913931326122956,
+        "explore_cash_inr": 20051.553470914925
+      },
+      {
+        "cell_id": "IST-MIX",
+        "cluster": "TUR|mixed|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 2364.0499999999997,
+        "posterior_var": 10000.0,
+        "thompson_sample": 2455.018417569039,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "MAD-SUM",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3562.000164250829,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3626.963805335497,
+        "explore_units": 1.7003343331964742,
+        "explore_cash_inr": 20063.945131718396
+      },
+      {
+        "cell_id": "HKT-PEAK",
+        "cluster": "SEA|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3102.6397244389163,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3242.734987224532,
+        "explore_units": 1.9931595176925208,
+        "explore_cash_inr": 17938.435659232688
+      },
+      {
+        "cell_id": "DXB-TRANS",
+        "cluster": "GCC|mixed|transfer",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 543.45,
+        "posterior_var": 10000.0,
+        "thompson_sample": 491.7089338042461,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "DXB-FREE-JAN",
+        "cluster": "GCC|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 1958.800019032142,
+        "posterior_var": 10000.0,
+        "thompson_sample": 2047.3609424773429,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "BKK-FREE-MAR",
+        "cluster": "SEA|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 1421.1600420261452,
+        "posterior_var": 10000.0,
+        "thompson_sample": 1512.2305205547577,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "DXB-BIZ-Q1",
+        "cluster": "GCC|business|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 3648.4000000000005,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3821.852472083587,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "SIN-BIZ-Q2",
+        "cluster": "SEA|business|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3954.9800000000005,
+        "posterior_var": 10000.0,
+        "thompson_sample": 4050.1446522880815,
+        "explore_units": 1.7503853696679028,
+        "explore_cash_inr": 22404.932731749155
+      },
+      {
+        "cell_id": "IST-FREE-SPR",
+        "cluster": "TUR|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 1466.74,
+        "posterior_var": 10000.0,
+        "thompson_sample": 1502.8134083537152,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "HKT-FREE-MAY",
+        "cluster": "SEA|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 1488.6000904274176,
+        "posterior_var": 10000.0,
+        "thompson_sample": 1451.5792461085587,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "MLE-FREE-FEB",
+        "cluster": "IO|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 5455.6022362028225,
+        "posterior_var": 10000.0,
+        "thompson_sample": 5435.724944206471,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "PAR-SPR",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3792.5200096820577,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3781.3834146853637,
+        "explore_units": 1.6090905066832235,
+        "explore_cash_inr": 20918.176586881906
+      },
+      {
+        "cell_id": "LON-SPR",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3870.39999165168,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3880.497580381077,
+        "explore_units": 1.6019749784580042,
+        "explore_cash_inr": 21466.464711337256
+      },
+      {
+        "cell_id": "ROM-SPR",
+        "cluster": "EU|leisure|hotel",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 3617.6000454935142,
+        "posterior_var": 10000.0,
+        "thompson_sample": 3759.880639525685,
+        "explore_units": 1.7048545669376391,
+        "explore_cash_inr": 20799.225716639197
+      },
+      {
+        "cell_id": "AIR-DEL-SIN",
+        "cluster": "SEA|mixed|air",
+        "eligible_little_history": true,
+        "posterior_mean_delta_m": 2926.0,
+        "posterior_var": 10000.0,
+        "thompson_sample": 2949.762174792315,
+        "explore_units": 0.6660303623269516,
+        "explore_cash_inr": 16317.743877010313
+      },
+      {
+        "cell_id": "DXB-WKD",
+        "cluster": "GCC|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 2216.9200133306276,
+        "posterior_var": 10000.0,
+        "thompson_sample": 2227.467400558956,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "BKK-WKD",
+        "cluster": "SEA|leisure|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 1537.170031569017,
+        "posterior_var": 10000.0,
+        "thompson_sample": 1640.1202042971906,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      },
+      {
+        "cell_id": "IST-WKD",
+        "cluster": "TUR|business|hotel",
+        "eligible_little_history": false,
+        "posterior_mean_delta_m": 1886.8999999999996,
+        "posterior_var": 10000.0,
+        "thompson_sample": 1774.4064590207581,
+        "explore_units": 0.0,
+        "explore_cash_inr": 0.0
+      }
+    ]
+  },
+  "main_spend_inr": 9409000.000000002,
+  "total_spend_inr": 9709000.0,
+  "total_units": [
+    34.253469470840614,
+    26.336358626578285,
+    22.276115318566248,
+    29.396586252707916,
+    41.23051351625004,
+    25.610345223185185,
+    38.74645525550659,
+    39.83492825924988,
+    42.7993501874804,
+    29.540094905224432,
+    39.9902022064747,
+    36.10398731253469,
+    16.002908613597363,
+    60.0,
+    70.0,
+    31.38841657094113,
+    30.24709670630462,
+    55.0,
+    65.0,
+    20.0,
+    39.836970611397206,
+    42.5789556569907,
+    31.32359089543189,
+    37.95724167350536,
+    36.376819361656594,
+    35.934979713396885,
+    29.870409294717117
+  ],
+  "lambda_star": 2.5822498780869086e+112,
+  "assumption": "Simulator outputs under stated assumptions, not TBO real P&L. Thompson sampling over Normal posterior of delta_m for low-history cash-positive cells; similarity clusters (region,segment,product) with shrinkage 0.35 toward cluster mean; exploration budget 3% (2-5% allowed) reserved before main water-filling."
+}

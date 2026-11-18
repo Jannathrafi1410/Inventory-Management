@@ -1,0 +1,14 @@
+PASS  bootstrap CI reproducible (same seed)
+PASS  CI contains mean (lo <= mean <= hi)
+PASS  bootstrap mean = sample mean
+PASS  CI wider for higher variance
+PASS  eval.metrics imported ok
+PASS  WAPE is non-negative
+PASS  WAPE = 0 for perfect forecast
+PASS  PICP = 1.0 when all inside interval
+PASS  PICP = 0.0 when none inside (shifted far)
+PASS  pinball_loss non-negative
+PASS  pinball_loss = 0 for perfect
+PASS  MASE positive
+PASS  forecast/splits.py file exists
+Results: 13 passed, 0 failed, 0 errors

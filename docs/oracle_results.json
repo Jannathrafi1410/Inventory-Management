@@ -1,0 +1,57 @@
+{
+  "assumption": "Simulator outputs under stated assumptions, not TBO real P&L. Oracle has perfect foresight of realized latent demand per scenario (eval-only).",
+  "budget": 10000000.0,
+  "n_seeds": 50,
+  "scenarios_per_seed": 300,
+  "oracle_mean_uplift": 5019656.061869126,
+  "results": [
+    {
+      "strategy": "B0_no_prebuy",
+      "mean_uplift": 1179362.8231415367,
+      "mean_spoilage": 0.0,
+      "mean_spend": 0.0,
+      "pct_oracle_captured": 23.494893048556552,
+      "mean_regret": 3840293.238727589
+    },
+    {
+      "strategy": "B1_equal_split",
+      "mean_uplift": 4208720.943928199,
+      "mean_spoilage": 21335.49496987785,
+      "mean_spend": 9999999.999999998,
+      "pct_oracle_captured": 83.84480713527282,
+      "mean_regret": 810935.1179409269
+    },
+    {
+      "strategy": "B2_volume_proportional",
+      "mean_uplift": 4233535.749437099,
+      "mean_spoilage": 23236.447865716924,
+      "mean_spend": 10000000.0,
+      "pct_oracle_captured": 84.33915983998104,
+      "mean_regret": 786120.3124320265
+    },
+    {
+      "strategy": "B3_mean_demand_newsvendor",
+      "mean_uplift": 4449047.988144924,
+      "mean_spoilage": 240297.5087148768,
+      "mean_spend": 10000000.0,
+      "pct_oracle_captured": 88.63252647808444,
+      "mean_regret": 570608.0737242019
+    },
+    {
+      "strategy": "B4_correct_fractile_no_budget",
+      "mean_uplift": 4298693.036387459,
+      "mean_spoilage": 3486.2802456839836,
+      "mean_spend": 10000000.0,
+      "pct_oracle_captured": 85.63720269684757,
+      "mean_regret": 720963.0254816664
+    },
+    {
+      "strategy": "Planner",
+      "mean_uplift": 4680099.212016482,
+      "mean_spoilage": 62174.7425109914,
+      "mean_spend": 9672937.166034771,
+      "pct_oracle_captured": 93.2354558625635,
+      "mean_regret": 339556.8498526439
+    }
+  ]
+}

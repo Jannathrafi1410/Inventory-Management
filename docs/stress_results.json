@@ -1,0 +1,145 @@
+{
+  "assumption": "Simulator outputs under stated assumptions, not TBO real P&L. Decisions on stressed forecast scenarios; realized on stressed held-out latent scenarios (eval-only); bot contamination affects decision signal only.",
+  "budget": 10000000.0,
+  "n_scenarios": 300,
+  "seed": 42,
+  "alpha": 0.95,
+  "risk_beta": 0.5,
+  "reserve_fraction": 0.03,
+  "cases": [
+    "demand_-30pct",
+    "demand_+30pct",
+    "volatility_x1.6",
+    "correlation_x2",
+    "sellout_a_-0.20",
+    "sellout_a_+0.10",
+    "event_cancellation",
+    "fx_+10pct",
+    "supplier_default_largest",
+    "competitor_price_war_-8pct",
+    "bot_contamination_20pct_search"
+  ],
+  "table": [
+    {
+      "scenario": "demand_-30pct",
+      "rn_expected_uplift": 3244008.5326656606,
+      "rn_cvar95": 2665497.663357717,
+      "rn_cash_spoilage": 264143.4368321947,
+      "rn_spend": 9699999.999999996,
+      "ra_expected_uplift": 3392060.013029078,
+      "ra_cvar95": 2643154.300715034,
+      "ra_cash_spoilage": 369238.58559660777,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "demand_+30pct",
+      "rn_expected_uplift": 4431086.0511626145,
+      "rn_cvar95": 4177381.2641723007,
+      "rn_cash_spoilage": 1538.375249201285,
+      "rn_spend": 9699999.999999996,
+      "ra_expected_uplift": 4484853.322456708,
+      "ra_cvar95": 3709556.5705502545,
+      "ra_cash_spoilage": 174511.66195493075,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "volatility_x1.6",
+      "rn_expected_uplift": 3728961.1496718717,
+      "rn_cvar95": 2906254.57837683,
+      "rn_cash_spoilage": 203150.81661957703,
+      "rn_spend": 9470710.719015969,
+      "ra_expected_uplift": 3855053.6053348486,
+      "ra_cvar95": 2684019.8960343613,
+      "ra_cash_spoilage": 350671.56628861243,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "correlation_x2",
+      "rn_expected_uplift": 4075481.542310304,
+      "rn_cvar95": 3677461.9871705202,
+      "rn_cash_spoilage": 44993.31343760539,
+      "rn_spend": 9700000.0,
+      "ra_expected_uplift": 3918687.4522712003,
+      "ra_cvar95": 2864101.9164445307,
+      "ra_cash_spoilage": 425077.4305367677,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "sellout_a_-0.20",
+      "rn_expected_uplift": 3665151.936336662,
+      "rn_cvar95": 3330409.3358552027,
+      "rn_cash_spoilage": 67026.65015242506,
+      "rn_spend": 9700000.000000004,
+      "ra_expected_uplift": 3497152.2708193795,
+      "ra_cvar95": 2559171.3423283943,
+      "ra_cash_spoilage": 430807.5166926595,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "sellout_a_+0.10",
+      "rn_expected_uplift": 4104361.995660758,
+      "rn_cvar95": 3687777.5711049438,
+      "rn_cash_spoilage": 67026.65015242506,
+      "rn_spend": 9700000.000000004,
+      "ra_expected_uplift": 3943521.9926874447,
+      "ra_cvar95": 2936007.522289292,
+      "ra_cash_spoilage": 435991.297188096,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "event_cancellation",
+      "rn_expected_uplift": 3727000.6243814244,
+      "rn_cvar95": 3323191.2198515586,
+      "rn_cash_spoilage": 117969.29316253227,
+      "rn_spend": 9700000.000000002,
+      "ra_expected_uplift": 3544328.882404882,
+      "ra_cvar95": 2929007.8244265374,
+      "ra_cash_spoilage": 377621.2609576443,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "fx_+10pct",
+      "rn_expected_uplift": 2516745.3099398855,
+      "rn_cvar95": 2190792.8924890775,
+      "rn_cash_spoilage": 67026.65015242506,
+      "rn_spend": 9700000.000000004,
+      "ra_expected_uplift": 2254859.610099329,
+      "ra_cvar95": 1393246.0466520886,
+      "ra_cash_spoilage": 432575.00758134294,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "supplier_default_largest",
+      "rn_expected_uplift": 3920162.7399016363,
+      "rn_cvar95": 3539228.0000203443,
+      "rn_cash_spoilage": 67026.65015242506,
+      "rn_spend": 9700000.000000004,
+      "ra_expected_uplift": 3740879.860426894,
+      "ra_cvar95": 2745580.652367015,
+      "ra_cash_spoilage": 444470.6167352333,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "competitor_price_war_-8pct",
+      "rn_expected_uplift": 1495380.8926975925,
+      "rn_cvar95": 1227552.76066792,
+      "rn_cash_spoilage": 67026.65015242506,
+      "rn_spend": 9700000.000000004,
+      "ra_expected_uplift": 1281274.139008631,
+      "ra_cvar95": 511627.4353799892,
+      "ra_cash_spoilage": 430167.05224496237,
+      "ra_spend": 9700000.0
+    },
+    {
+      "scenario": "bot_contamination_20pct_search",
+      "rn_expected_uplift": 4030440.0911426465,
+      "rn_cvar95": 3705928.059592787,
+      "rn_cash_spoilage": 30073.29326752851,
+      "rn_spend": 9700000.0,
+      "ra_expected_uplift": 3799851.0478006913,
+      "ra_cvar95": 2771259.8306562267,
+      "ra_cash_spoilage": 449180.48229312047,
+      "ra_spend": 9700000.0
+    }
+  ]
+}
